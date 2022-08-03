@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="styles/styles.css">
   <title>Boas-vindas</title>
 </head>
@@ -50,8 +51,8 @@
   <!-- boas-vindas -->
   <section class="welcome">
     <div class="container-welcome">
-      <h1>Boas-vindas</h1>
-      <p>Todos os dias recebemos as mesmas quantidades de horas, 
+      <h1 data-aos="fade-right">Boas-vindas</h1>
+      <p data-aos="fade-left">Todos os dias recebemos as mesmas quantidades de horas, 
         nem um minuto a mais nem a menos. Não podemos pedir mais 
         tempo ou guardar uma quantidade para depois, temos a 
         mesma quantidade sempre e precisamos aproveitar da melhor 
@@ -60,22 +61,27 @@
         atividades de maior ou menor valor. 
       </p>
       <br>
-      <p>É com o intuito de lhe ajudar, que convidamos você para 
+      <p data-aos="fade-right">É com o intuito de lhe ajudar, que convidamos você para 
         o curso <strong>Gestão do Tempo: aprenda a administrar seu tempo 
         de forma eficiente</strong>. Uma jornada que vai ajudar você a 
         transformar a maneira como utiliza seu tempo e a empregá-lo
          de forma <strong>eficiente</strong> e <strong>eficaz</strong>.
       </p>
       <br>
-      <p>Você pode navegar pelo conteúdo por meio dos botões de 
+      <p data-aos="fade-left">Você pode navegar pelo conteúdo por meio dos botões de 
          menu  no início da página. Aproveite bastante cada uma 
          das etapas, tomando notas, realizando as atividades e 
          aproveitando tudo que preparamos para você.
       </p>
     </div>
-    <h3>Vamos começar?</h3>
+    <h3 data-aos="fade-right">Vamos começar?</h3>
 
     <button class="proximo">Próximo conteúdo</button>
   </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

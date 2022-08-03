@@ -67,6 +67,7 @@ p {
   gap: 0.5rem;
   font-weight: 700;
   color: var(--blue-800);
+  background: transparent;
 
   cursor: pointer;
 }
