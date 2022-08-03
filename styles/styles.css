@@ -95,7 +95,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+.container-capa {
+  max-width: 100%;
 }
 
 .capa-title h1 {
@@ -257,4 +260,85 @@ p {
 
 .welcome button {
   margin-bottom: 2rem;
+}
+
+
+@media (max-width: 992px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .container-capa {
+    max-width: 50rem;
+  }
+
+  .capa-title h1 {
+    font-size: 3rem;
+  }
+
+  .capa-title h1:before {
+    width: 2rem;
+    height: 0.125rem;
+    margin-right: 1rem;
+  }
+  
+  .capa-title h1:after {
+    width: 2rem;
+    height: 0.125rem;
+    margin-left: 1rem;
+  }  
+
+  .capa-title p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .container-capa {
+    max-width: 30rem;
+  }
+
+  .capa-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .capa-title h1 {
+    font-size: 2rem;
+  }
+
+  .capa-title h1:before {
+    width: 1.5rem;
+  }
+  
+  .capa-title h1:after {
+    width: 1.5rem;
+  }  
+
+  .capa-title p {
+    height: auto;
+    width: 90%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background: var(--orange);
+    border-radius: 100px;
+  
+    margin-top: 0.5rem;
+  
+    display: block;
+    text-align: center;
+  }
+
+  .welcome {
+    padding: 2rem;
+  }
+
+  .welcome h3 {
+    width: 100%;
+  }
 }
