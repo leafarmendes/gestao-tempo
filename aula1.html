@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"/>
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement-plugins/2.5.0/speed/speed.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement-plugins/2.5.0/skip-back/skip-back.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement-plugins/2.5.0/jump-forward/jump-forward.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement-plugins/2.5.0/speed/speed.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement-plugins/2.5.0/skip-back/skip-back.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement-plugins/2.5.0/jump-forward/jump-forward.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/default.css"/>
 
-  <link rel="stylesheet" href="styles/global.css">
-  <link rel="stylesheet" href="styles/aula1.css">
-  <link rel="stylesheet" href="styles/podcast.css">
-  link
+  <link rel="stylesheet" href="styles/global.css"/>
+  <link rel="stylesheet" href="styles/aula1.css"/>
+  <link rel="stylesheet" href="styles/podcast.css"/>
 
   <title>Boas-vindas</title>
 </head>
@@ -287,13 +287,34 @@
         ​Essa tendência à procrastinação pode ter um custo alto, causando mais 
         problemas, preocupações e gerando mais trabalho.
       </p>
+      <br>
+      <p>
+        A procrastinação é um dos maiores desperdiçadores de tempo que existe,
+        e para resolver essa questão é necessário entendimento das causas que
+        levam ela a acontecer, uma avaliação de suas consequências e uma 
+        constante disciplina para enfrentá-la.
+      </p>
+      <br>
+      <p>
+        No vídeo a seguir você pode entender um pouco mais sobre a procrastinação
+        e encontrar algumas alternativas para resolvê-la: 
+      </p>
+      <br>
+      <vm-player
+        theme="dark"
+        style="--vm-player-theme: #e86c8b;"
+      >
+        <vm-vimeo video-id="411652396"><vm-vimeo>
+      
+        <vm-default-ui><vm-default-ui>
+     </vm-player>
     </div>
   </section>
 
   <footer>
-    <button onclick=proximaAula() class="voltar">Conteúdo Anterior</button>
+    <button onclick=toAula1() class="voltar">Conteúdo Anterior</button>
     <p>|</p>
-    <button onclick=proximaAula() class="proximo">Próximo conteúdo</button>
+    <button onclick=toAula2() class="proximo">Próximo conteúdo</button>
   </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -302,10 +323,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement-plugins/2.5.0/skip-back/skip-back.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement-plugins/2.5.0/jump-forward/jump-forward.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/ivorpad/mediaelement-changespeed/changespeed.js"></script>
-  <script src="/scripts/script.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@vime/core@^5/dist/vime/vime.esm.js"></script>
+
+  <script src="/scripts/script.js"></script>
   <script>
     AOS.init();
+
+    
+    function toAula1() {
+      window.open('/index.html', "_self");
+    }
+
+    function toAula2() {
+      window.open('/aula2.html', "_self");
+    }
   </script>
 </body>
 </html>
