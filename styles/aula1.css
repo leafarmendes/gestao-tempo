@@ -206,6 +206,7 @@
 
 .splide {
   max-width: 70rem;
+  height: 28rem;
   margin-top: 3rem;
 }
 
@@ -226,6 +227,7 @@
 }
 
 .container-slider {
+  height: 28rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -497,9 +499,25 @@
   .capa-title p {
     font-size: 1.5rem;
   }
-  
+
+  .primeira img {
+    display: none;
+  }
+
+  .segunda {
+    padding: 2rem;
+  }
+
+  .container-slider img {
+    display: none;
+  }
+
+  .slider-content {
+    padding: 3rem;
+  }
+
   .terceira {
-    padding: 1rem;
+    padding: 0;
   }
 
   .wrapper-podcast {
@@ -516,9 +534,39 @@
     margin: 0;
   }
 
+  .quarta-wrapper-um {
+    padding: 2rem;
+  }
+
+  .infografico-container {
+    padding: 2rem;
+  }
+
+  .infografico-itens span {
+    height: 10rem;
+  }
+
+  .infografico-image {
+    display: none;
+  }
+
+  .lottie-svg {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .vinheta-content p, h2 {
+    text-align: left;
+  }  
+
   .container {
     max-width: 50rem;
   }
+
+  .setima-wrapper-um {
+    padding: 2rem;
+  }
+
 }
 
 
@@ -577,6 +625,70 @@
     font-size: 2rem;
   }
 
+  .segunda {
+    padding: 0;
+  }
+
+  .segunda-wrapper-um {
+    padding: 2rem;
+  }
+
+  .splide {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .container-slider {
+    height: 20rem;
+  }
+
+  .slider-content {
+    padding: 0 1rem;
+  }
+
+  .slider-content h2 {
+    padding: 0 1rem;
+  }
+
+  .slider-content p {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .segunda-wrapper-dois {
+    padding: 2rem;
+  }
+
+  .terceira-wrapper-dois {
+    width: 100%;
+    border-radius: 0;
+    padding: 1rem 4rem;
+  }
+
+  .quarta-wrapper-um {
+    padding: 2rem;
+  }
+
+  .infografico-container {
+    padding: 2rem;
+  }
+
+  .infografico-itens span {
+    height: 10rem;
+  }
+
+  .infografico-image {
+    display: none;
+  }
+
+  .lottie-svg {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .vinheta-content p, h2 {
+    text-align: left;
+  }
 
   .wrapper-podcast {
     max-width: 100%;
@@ -585,6 +697,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .setima-wrapper-um {
+    padding: 2rem;
   }
 
   .terceira-wrapper-um {
@@ -601,5 +717,28 @@
     border-top: 1px solid var(--gray-300);
   }
 
+  footer {
+    background: var(--blue-800);
+    padding: 1rem;
+  }
 
+  footer .voltar {
+    color: var(--gray-100);
+    text-align: right;
+    font-size: 0.875rem;
+  }
+
+  .voltar::after {
+    content: url('/assets/preview_w_button.svg');
+  }
+
+  footer .proximo {
+    color: var(--gray-100);
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  .proximo::before {
+    content: url('/assets/next_w_button.svg');
+  }
 }
