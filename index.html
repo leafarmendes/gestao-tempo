@@ -10,8 +10,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Boas-vindas</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Aula 1</title>
 </head>
 <body>
   <!-- capa -->
@@ -76,12 +77,16 @@
     </div>
     <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">Vamos começar?</h3>
 
-    <button class="proximo">Próximo conteúdo</button>
+    <button onclick=proximaAula() class="proximo">Próximo conteúdo</button>
   </section>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    function proximaAula() {
+      window.open('/aula1.html');
+    }
   </script>
 </body>
 </html>
