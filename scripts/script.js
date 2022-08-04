@@ -56,4 +56,26 @@ document.addEventListener( 'DOMContentLoaded', function() {
   //lottie load
   const getAttentionLottiePlayer = document.querySelector('.vinheta-importante lottie-player');
   getAttentionLottiePlayer.getLottie().goToAndPlay(0, true);
+
+
+  const getBookMentionModal = document.querySelector('.popup-book');
+  getBookMentionModal.style.display = 'none';
+
+  const getBookMentionParagraphSpan = document.querySelector('.book-mention-paragraph span');
+
+  getBookMentionParagraphSpan.addEventListener('click', openBookModal);
+  
+  function openBookModal() {
+    getBookMentionModal.style.display = 'flex';
+  }
+
+
+  const getCloseButtonBookMentionModal = document.querySelector('.popup-book button');
+
+  
+  function closeBookModal() {
+    getBookMentionModal.style.display = 'none';
+  }
+
+  getCloseButtonBookMentionModal.addEventListener('click', closeBookModal)
 });
