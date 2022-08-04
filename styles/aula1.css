@@ -250,7 +250,7 @@
 }
 
 .terceira {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -261,7 +261,6 @@
 
 .wrapper-podcast {
   max-width: 70rem;
-  height: 28rem;
   background: var(--gray-200);
   display: flex;
   flex-direction: column;
@@ -289,12 +288,185 @@
   background: var(--blue-800);
   border-radius: 8px;
 
-  margin-top: -2.5rem;
+  margin-top: -0.875rem;
 }
 
 .terceira-wrapper-dois p {
   color: var(--gray-100);
   text-align: center;
+}
+
+.quarta {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 5rem;
+}
+
+.quarta-wrapper-um p{
+  margin-top: 1rem;
+}
+
+.quinta {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.infografico-container {
+  display: flex;
+  align-items: center;
+
+  width: 70rem;
+  gap: 2rem;
+  background: var(--gray-200);
+}
+
+.infografico-content {
+  max-width: 40rem;
+}
+
+.infografico-itens {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.infografico-content h2 {
+  margin-bottom: 1rem;
+}
+
+.infografico-itens p {
+  max-width: 36rem;
+}
+
+.infografico-itens:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.infografico-itens span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue-800);
+  width: 3rem;
+  height: 3.5rem;
+  padding: 1rem;
+}
+
+.sexta {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.wrapper-vinheta {
+  width: 70rem;
+  display: flex;
+  justify-content: center;
+}
+
+.lottie-svg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-800);
+  border-radius: 8px 8px 0 0;
+  width: 70rem;
+  height: 2rem;
+}
+
+.ball {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  left: 0;
+}
+
+.circle1 {
+  background: #eb5757;
+  margin-left: 1rem;
+}
+
+.circle2 {
+  background: #fcd303;
+  margin-left: 2.5rem;
+}
+
+.circle3 {
+  background: #5ec163;
+  margin-left: 4rem;
+}
+
+.lottie-svg lottie-player {
+  margin-top: 10rem;
+}
+
+.vinheta-importante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--gray-200)
+}
+
+.vinheta-content {
+  padding: 0 3rem;
+}
+
+.vinheta-importante h2 {
+  margin: 10rem  0 1rem 0;
+}
+
+.vinheta-importante p {
+  margin-bottom: 2rem;
+}
+
+.setima {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.setima p {
+  margin-top: 1rem;
+}
+
+@media (max-width: 1150px) {
+  .wrapper-podcast {
+    max-width: 60rem;
+    height: auto;
+    background: var(--gray-200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .terceira-wrapper-um {
+    max-width: 60rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 60rem;
+    margin: 30px auto;
+  
+    border-top: 1px solid var(--gray-300);
+  }
+  
+  .mejs-appended-buttons {
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 992px) {
@@ -325,7 +497,30 @@
   .capa-title p {
     font-size: 1.5rem;
   }
+  
+  .terceira {
+    padding: 1rem;
+  }
+
+  .wrapper-podcast {
+    max-width: 50rem;
+    height: auto;
+  }
+
+  .terceira-wrapper-um {
+    max-width: 50rem;
+  }
+
+  .terceira-wrapper-dois {
+    width: 46rem;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 50rem;
+  }
 }
+
 
 @media (max-width: 768px) {
   .menu {
@@ -381,4 +576,30 @@
     color: var(--orange);
     font-size: 2rem;
   }
+
+
+  .wrapper-podcast {
+    max-width: 100%;
+    height: auto;
+    background: var(--gray-200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .terceira-wrapper-um {
+    max-width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 30px auto;
+  
+    border-top: 1px solid var(--gray-300);
+  }
+
+
 }

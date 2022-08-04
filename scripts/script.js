@@ -5,7 +5,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
   splide.mount();
 
-
+  //podcast player
   const options = {
     defaultSpeed: '1.00',
     speeds: ['1.25','1.50', '2.00', '0.75'],
@@ -50,4 +50,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
       elementBottom.append(elem)
     })
   })()
+
+  /* -------------- */ 
+
+  //lottie load
+  const getAttentionLottiePlayer = document.querySelector('.vinheta-importante lottie-player');
+  getAttentionLottiePlayer.getLottie().goToAndPlay(0, true);
 });
