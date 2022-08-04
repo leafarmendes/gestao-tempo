@@ -115,11 +115,11 @@ p {
 }
 
 .padrao {
-  max-width: 50rem;
+  max-width: 55rem;
 }
 
 footer {
-  margin-top: 4rem;
+  margin-top: 2rem;
   width: 100%;
   height: 4rem;
   background-color: var(--gray-200);
